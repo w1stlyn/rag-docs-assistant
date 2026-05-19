@@ -39,7 +39,7 @@ PDF/DOCX/MD ─▶│ Loaders  │──────────▶│ Splitter 
 ### 1. Получить ключи Yandex Cloud
 
 1. Зайдите в [Yandex Cloud Console](https://console.cloud.yandex.ru/).
-2. Создайте сервисный аккаунт с ролями `ai.languageModels.user` и `ai.embeddings.user`.
+2. Создайте сервисный аккаунт с ролью `ai.languageModels.user`.
 3. Получите API-ключ и `folder_id`.
 
 ### 2. Установка
@@ -156,17 +156,3 @@ rag-docs-assistant/
 └── tests/
     └── test_splitter.py
 ```
-
-## Дорожная карта
-
-- [ ] Гибридный поиск (BM25 + dense) через rank-fusion
-- [ ] Re-ranker на cross-encoder
-- [ ] HyDE / query rewriting
-- [ ] Поддержка таблиц и формул в PDF
-- [ ] Telegram-бот как альтернативный интерфейс
-- [ ] Метрики качества (RAGAS) в CI
-- [ ] Docker-образ + docker-compose
-
-## Лицензия
-
-MIT
